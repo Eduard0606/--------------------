@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Play";
+  src: url(../public/fonts/Play-Bold.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Play";
+}
+.CRM_CONT {
+  width: 360px;
+  height: 6924px;
+  border: 1px solid;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  overflow: hidden;
+}
+.pagecrm_block1 {
+  background-image: url(/public/img/фон1_result.webp);
+  background-repeat: no-repeat;
+  background-size: 1000px 3163px;
+  position: relative;
+  width: 360px;
+  height: 500px;
+  left: -11.24px;
+  z-index: 12;
+}
+.pagecrm_header {
+  display: flex;
+  position: relative;
+  width: 328px;
+  height: 16.03px;
+  gap: 137px;
+  top: 16px;
+  left: 16px;
+}
+.pagecrm_header div {
+  color: white;
+  width: 90px;
+  height: 13px;
+  font-family: Play;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.31px;
+  text-align: left;
+}
+.pagecrm_navigation {
+  display: flex;
+  position: relative;
+  width: 328px;
+  height: 44px;
+  top: 15px;
+  left: 16px;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.gamburger-menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 5px 0px 5px 0px;
+  top: 5px;
+}
+.pagecrm_breadcrumps {
+  display: flex;
+  width: 300px;
+  height: 36px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.pagecrm_breadcrumps span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #e9deff;
+  margin: 12px 0px 12px 0px;
+}
+.pagecrm_breadcrumps span:not(:first-child)::before {
+  content: url(../public/img/Стрелка.svg);
+  width: 5px;
+  height: 8.73px;
+  margin: 0px 5px 0px 5px;
+}
+.pagecrm_breadcrumps span:last-child {
+  text-shadow: 3px 2px 8px rgb(168, 61, 149);
+}
+.searchbartextarea {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 51, 90, 0.3) 0%,
+    rgba(28, 27, 51, 0.3) 100%
+  );
+  border-radius: 25px;
+  width: 281px;
+  height: 25px;
+  top: 10px;
+  border: 1px solid;
+  padding: 0px 0px 0px 10px;
+  resize: none;
+  margin-left: 8px;
+}
+.pagecrm_titleCRM span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 2px 8px rgb(168, 61, 149);
+}
+.pagecrm_background_img {
+  background-image: url(../public/img/background.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 700px 250px;
+  position: relative;
+  width: 700.79px;
+  height: 250px;
+  z-index: -1;
+  left: -90px;
+  top: -10px;
+}
+.pagecrm_background_img2 {
+  margin: 0 auto;
+  position: relative;
+  bottom: 230px;
+}
+.pagecrm_btn {
+  display: inline;
+  position: relative;
+  bottom: 230px;
+  padding: 10px 40px 10px 40px;
+  background: rgba(177, 149, 255, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(215, 149, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.2px;
+  color: white;
+  width: 129px;
+  height: 16px;
+  border-radius: 30px;
+  border: 3px solid;
+  border-color: linear-gradient(0deg, #5e17eb 0.08%, #e5097f 155.74%);
+}
