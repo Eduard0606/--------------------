@@ -9,6 +9,7 @@
   text-decoration: none;
   text-align: center;
   font-family: "Play";
+
 }
 .CRM_CONT {
   width: 360px;
@@ -17,9 +18,9 @@
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
   overflow: hidden;
+  background-color: gold;
 }
 .pagecrm_block1 {
-  background-image: url(/public/img/фон1_result.webp);
   background-repeat: no-repeat;
   background-size: 1000px 3163px;
   position: relative;
@@ -27,6 +28,7 @@
   height: 500px;
   left: -11.24px;
   z-index: 12;
+  margin-bottom: 75px;
 }
 .pagecrm_header {
   display: flex;
@@ -146,4 +148,190 @@
   border-radius: 30px;
   border: 3px solid;
   border-color: linear-gradient(0deg, #5e17eb 0.08%, #e5097f 155.74%);
+}
+.pagecrm_block2 {
+  width: 340px;
+  height: 405px;
+  margin-bottom: 75px;
+}
+.pagecrm_title2 {
+  width: 340px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.container_for_pictures {
+  width: 340px;
+  height: 325px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pagecrm_pictures {
+  width: 170px;
+  height: 145px;
+  margin-bottom: 10px;
+}
+.container_for_pictures span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  width: 170px;
+  height: 60px;
+  line-height: 20px;
+  text-align: center;
+}
+.pagecrm_pictures:nth-last-child(-n + 2) {
+  height: 160px;
+}
+
+.pagecrm_block3 {
+  width: 340px;
+  height: 400px;
+  margin-bottom: 75px;
+}
+.partners1 {
+  display: flex;
+  justify-content: flex-end;
+  width: 340px;
+  height: 190px;
+  border-radius: 10px;
+  background-image: url(../public/img/Б24.svg);
+  background-repeat: no-repeat;
+  background-size: 170px 190px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px 0px #d795ff;
+}
+.partners2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 340px;
+  height: 190px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-image: url(../public/img/Б24 2.svg);
+  background-repeat: no-repeat;
+  background-size: 170px 190px;
+  box-shadow: 0px 0px 20px 0px #d795ff;
+}
+.partners_content1 {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 190px;
+  padding: 10px 10px 20px 10px;
+  gap: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background: #48057280;
+}
+.partners_content2 {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 190px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 10px 20px 10px;
+  gap: 10px;
+  background: #48057280;
+}
+li {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+  font-size: 0.8rem;
+  font-family: Play;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ffffff;
+}
+li::marker {
+  content: url(../public/img/Галка.svg);
+}
+.itme {
+  text-align: left;
+  color: #b195ff;
+}
+li img {
+  margin-right: 7px;
+}
+.pagecrm_block4 {
+  width: 340px;
+  height: 612px;
+  padding: 44px 15px 44px 15px;
+
+  border-radius: 30px;
+  background: #4805727d;
+  box-shadow: 0px 0px 10px 0px #9662ff;
+  margin-bottom: 75px;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        rgb(126, 17, 172),
+        rgb(104, 27, 142)
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(45deg, #ff52e5, #f6d242) border-box;
+}
+.titlee {
+  width: 286px;
+  height: 30px;
+  top: 44px;
+  left: 18.28px;
+  font-family: play;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
+  color: #9662ff;
+}
+.conten_pagecrm4 {
+  display: block;
+  width: 303px;
+  height: 40px;
+  font-family: play;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.flex_box {
+  display: flex;
+  flex-direction: column;
+}
+.flex_box textarea {
+  overflow: hidden;
+  padding: 20px;
+  resize: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 3px solid transparent;
+  background: linear-gradient(rgb(190, 39, 255), rgb(169, 137, 185)) padding-box,
+    linear-gradient(45deg, #ff52e5, #f6d242) border-box;
+}
+.pagecrm_btn2 {
+  color: white;
+  width: 307px;
+  height: 59px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #1e0044;
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px #9662ff;
+  margin: 20px 0px 20px 0px;
+}
+::placeholder {
+  color: white;
 }
