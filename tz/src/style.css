@@ -44,11 +44,17 @@
   color: white;
   width: 90px;
   height: 13px;
-  font-family: Play;
+  font-family: "Inter", sans-serif;
   font-size: 11px;
   font-weight: 500;
   line-height: 13.31px;
   text-align: left;
+}
+.lupa {
+  position: relative;
+  left: 30px;
+  top: 15px;
+  z-index: 1;
 }
 .pagecrm_navigation {
   display: flex;
@@ -89,7 +95,7 @@
   margin: 0px 5px 0px 5px;
 }
 .pagecrm_breadcrumps span:last-child {
-  text-shadow: 3px 2px 8px rgb(168, 61, 149);
+  text-shadow: 1px 1px 5px rgb(168, 61, 149);
 }
 .searchbartextarea {
   position: relative;
@@ -106,6 +112,7 @@
   padding: 0px 0px 0px 10px;
   resize: none;
   margin-left: 8px;
+  border: 2px solid whitesmoke;
 }
 .pagecrm_titleCRM span {
   font-size: 40px;
@@ -114,7 +121,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: white;
-  text-shadow: 3px 2px 8px rgb(168, 61, 149);
+  text-shadow: 2px 2px 3.5px rgb(168, 61, 149);
 }
 .pagecrm_background_img {
   background-image: url(../public/img/background.svg);
@@ -134,22 +141,26 @@
   bottom: 230px;
 }
 .pagecrm_btn {
-  display: inline;
   position: relative;
-  bottom: 230px;
+  bottom: 220px;
+  width: 240px;
+  height: 40px;
   padding: 10px 40px 10px 40px;
-  background: rgba(177, 149, 255, 0.5);
-  box-shadow: 0px 0px 10px 0px rgba(215, 149, 255, 1);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16.2px;
-  color: white;
-  width: 129px;
-  height: 16px;
-  border-radius: 30px;
-  border: 3px solid;
-  border-color: linear-gradient(0deg, #5e17eb 0.08%, #e5097f 155.74%);
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #917ae4,
+        #917ae4
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #ca8eff8c, #74dfdd6e, #a1b4ef8a, #59f8d2)
+      border-box;
+  box-shadow: 0px 0px 10px 0px #d795ff;
 }
+
 .pagecrm_block2 {
   width: 340px;
   height: 405px;
@@ -265,17 +276,15 @@ li img {
   height: 612px;
   padding: 44px 15px 44px 15px;
   border-radius: 30px;
-  background: #4805727d;
   box-shadow: 0px 0px 10px 0px #9662ff;
   margin-bottom: 75px;
   color: white;
   border: 2px solid transparent;
   border-radius: 30px;
-  background-color: #1e0044;
   background: 
 /* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
-        #4805727d,
-        #4805727d
+        #6439ac,
+        #6439ac
       )
       padding-box,
     /* border-box, чтобы он начинался под рамкой */
@@ -303,7 +312,7 @@ li img {
   line-height: 20px;
   text-align: center;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .flex_box {
   display: flex;
@@ -319,8 +328,8 @@ li img {
   border: 3px solid transparent;
   background: 
 /* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
-        #4805727d,
-        #4805727d
+        #6439ac,
+        #6439ac
       )
       padding-box,
     /* border-box, чтобы он начинался под рамкой */
@@ -331,13 +340,21 @@ li img {
   color: white;
   width: 307px;
   height: 59px;
-  border: 1px solid black;
   border-radius: 10px;
-  background: #1e0044;
   color: white;
   padding: 20px;
   box-shadow: 0px 0px 10px 0px #9662ff;
   margin: 20px 0px 20px 0px;
+  border: 1px solid transparent;
+  color: #e9deff;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #1e0044,
+        #1e0044
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #303093 50%, #23ffff 100%) border-box;
 }
 ::placeholder {
   color: white;
@@ -412,7 +429,16 @@ li img {
   padding: 33px 33px 0px 33px;
   background: #421963b2;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 9px 0px rgba(215, 149, 255, 0.5);
+  box-shadow: 0px 0px 9px 3px rgba(215, 149, 255, 0.5);
+  border: 2px solid transparent;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #6439ac,
+        #6439ac
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #9400ff, rgba(198, 79, 135, 0.83)) border-box;
 }
 .picture1 {
   width: 273px;
@@ -446,6 +472,16 @@ li img {
   text-align: center;
   margin-bottom: 26px;
   margin-top: 13px;
+  border: 1px solid transparent;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #4c2274,
+        #4c2274
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #ca8eff8c, #74dfdd6e, #a1b4ef8a, #59f8d2)
+      border-box;
 }
 
 .pagecrm_block7 {
@@ -510,13 +546,21 @@ li img {
   height: 59px;
   padding: 20px 49px 20px 49px;
   margin: -8px auto;
-  border: 2px solid white;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.51px;
   letter-spacing: -0.01em;
   border-radius: 10px;
-  background: #1e0044;
+  border: 1px solid transparent;
+  color: #e9deff;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #1e0044,
+        #1e0044
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #303093 50%, #23ffff 100%) border-box;
   box-shadow: 0px 0px 3.15px 0px #a22df71a;
   box-shadow: 0px 0px 6.52px 0px #a22df71a;
   box-shadow: 0px 0px 13px 0px #a22df71a;
@@ -547,13 +591,19 @@ li img {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 45px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(90deg, #7bc2fe, #d795ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 80%;
 }
 .form_cont {
   width: 344px;
   height: 438px;
-  border: 1px solid black;
-  background: #b77eff80;
   border-radius: 30px;
+  border: 2px solid transparent;
+  background: linear-gradient(#6439ac, #6439ac) padding-box,
+    linear-gradient(147.77deg, #7bc2fe, #ffffff, #d795ff) border-box;
 }
 .pagecrm_block9 {
   width: 341.01px;
@@ -577,7 +627,7 @@ li img {
   border-style: solid;
   border-left-style: none;
   border-right-style: none;
-  border-image-source: linear-gradient(180deg, #00ffb7 0%, #d795ff 100%);
+  border-image-source: linear-gradient(180deg, #00ffb7 0%, #00ffb7 100%);
   font-size: 14px;
   font-weight: 400;
   line-height: 54px;
@@ -618,11 +668,19 @@ li img {
 .pagecrm_btn44 {
   width: 141px;
   height: fit-content;
-  background: #1e0044;
   border: 1px solid;
   margin: 8px auto;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 6px;
+  border: 1px solid transparent;
+  background: 
+/* padding-box, чтобы он не рисовался под рамкой */ linear-gradient(
+        #1e0044,
+        #1e0044
+      )
+      padding-box,
+    /* border-box, чтобы он начинался под рамкой */
+      linear-gradient(147.77deg, #303093, #23ffff 100%) border-box;
 }
 .pagecrm_block11 {
   width: 341px;
